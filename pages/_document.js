@@ -15,7 +15,7 @@ export default function Document() {
           rel="stylesheet"
         ></link>
       </Head>
-      <body className="font-poppins  scrollbar-thin scrollbar-thumb-backgroundColor scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-track-gray-800 ">
+      <body className="font-montserrat scrollbar-thin scrollbar-thumb-backgroundColor scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-track-gray-800 bg-black ">
         <Main />
         <NextScript />
       </body>

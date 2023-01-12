@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useTheme } from 'next-themes';
 import Image from 'next/image';
 import { useState, useEffect, useRef } from 'react';
@@ -51,7 +52,7 @@ const Header = () => {
     <>
       <header
         ref={navbar}
-        className=" h-15 px-[100px] py-4 fixed top-0 z-[100] inset-x-0 bg-gray-50 dark:bg-black flex flex-auto  "
+        className=" h-20 px-[100px] py-4 fixed top-0 z-[100] inset-x-0 bg-gray-50 dark:bg-black flex flex-auto border-b-white/5 border-b-2 "
       >
         <div className="  flex justify-between items-center w-full  ">
           {/* Logo */}
@@ -68,7 +69,7 @@ const Header = () => {
             /> */}
           </Link>
 
-          <div className="md:flex hidden  gap-6 items-center font-[400]  text-[14px] ">
+          <div className="md:flex hidden  gap-6 items-center font-[600]  text-[16px] ">
             <Link href="/">
               <span className="text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white">
                 Home

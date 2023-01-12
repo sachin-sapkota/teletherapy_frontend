@@ -13,7 +13,11 @@ import Trust from '../components/Trust/trust';
 export default function Home() {
   return (
     <Layout className="">
-      <div className="bg-black mt-[60px] text-white">
+      <Head>
+        <title>Teletherapy</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
+      <div className="bg-black mt-[60px] text-white flex flex-col ">
         <Herosection />
         <Potential />
         <Trust />

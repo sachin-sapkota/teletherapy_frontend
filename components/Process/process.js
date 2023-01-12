@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const Process = () => {
   return (
-    <div className=" place-content-stretch mx-[120px] mt-[50px] relative h-[150vh] ">
+    <div className="  mx-[120px] mt-[50px] relative h-[1000px] ">
       <div className=" flex flex-col ">
         <h2 className="flex gap-3  ">
           <Image
@@ -23,7 +23,7 @@ const Process = () => {
           Get to know how everything works here.
         </h3>
       </div>
-      <div className="absolute flex justify-end right-0 top-[100px]">
+      <div className="absolute flex justify-end right-0 top-[100px] ">
         <Image
           className="object-contain "
           src="/images/process.png"
