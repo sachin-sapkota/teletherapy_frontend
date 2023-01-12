@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import Header from "../components//Header";
-import Footer from "../components/Footer";
+import Header from "../components//Header/header";
+import Footer from "../components/Footer/footer";
 import { loginUser, logoutUser } from "../api/User";
 import { getProfile } from "../api/Profile";
 import { Avatar } from "@mui/material";
@@ -39,10 +39,7 @@ function Login() {
         if (data) setLoading(false)
         if (typeof data !== typeof undefined) {
             if (data?.success) {
-                if (router.query.redirect_uri) {
-                    router.replace(`/${router.query.redirect_uri}`).then(() => router.reload())
-                } else
-                    router.push("/");
+                router.push("/form");
             } else {
                 setErrorMessage(data?.message);
             }
@@ -91,7 +88,7 @@ function Login() {
                         <div className="dark:text-red-400 font-sans text-red-800">
                             Hey, you are already logged in as
                         </div>
-                        <div className="dark:bg-formBox dark:text-mainText/75 md:bg-blue-200 flex flex-col gap-3 dark:md:border-0 md:border-2 shadow-lg p-10">
+                        <div className="bg-formBox dark:text-mainText/75 flex flex-col gap-3 dark:md:border-0 md:border-2 shadow-lg p-10">
                             <div className="hover:cursor-pointer flex flex-col md:flex-row items-center gap-4 md:gap-10">
                                 <div
                                     onClick={() => {
@@ -102,12 +99,12 @@ function Login() {
                                     <div>
                                         <Avatar alt="" src={loggedUser?.avatar} />
                                     </div>
-                                    <div className="font-sans dark:text-mainText/75 text-blue-900 text-xl hover:underline">
+                                    <div className="font-sans dark:text-mainText/75 text-blue-600 text-xl hover:underline">
                                         {loggedUser?.username}
                                     </div>
                                 </div>
                                 <div className="flex justify-end">
-                                    <span onClick={logout} className={` font-sans hover:underline`}>
+                                    <span onClick={logout} className={` font-sans hover:underline text-gray-400`}>
                                         <Link
                                             href="/"
                                         >
@@ -211,13 +208,6 @@ function Login() {
                                             </Link>
                                         </span>
                                     </div>
-                                    <span className="dark:hover:text-blue-400 text-center md:text-left font-sans inline-block align-baseline text-lg text-blue-500 hover:text-blue-800">
-                                        <Link
-                                            href="/forgot-password"
-                                        >
-                                            Forgot Password?
-                                        </Link>
-                                    </span>
                                 </div>
                             </form>
 

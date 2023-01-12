@@ -1,11 +1,27 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        backgroundColor: '#e6d2af',
+        'formBox': "#022621",
+      },
+
+
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
+      },
+    },
   },
-  plugins: [],
-}
+
+  plugins: [
+    // ...
+    require('tailwind-scrollbar')({ nocompatible: true }),
+  ],
+};
