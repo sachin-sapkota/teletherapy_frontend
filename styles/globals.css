@@ -1,3 +1,83 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.container {
+    max-width: 900px;
+    background-color: #FAFAFA;
+    margin: auto;
+}
+
+.messagearea {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    height: 70vh;
+    overflow-y: auto;
+    scroll-snap-type: roximity;
+}
+
+.container__header {
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(230, 200, 230);
+    border: 2px solid red;
+}
+
+.container__message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.container__left {
+    max-width:20%;
+    margin-left: 10px;
+    background-color: rgb(212, 211, 212); 
+    border: 2px solid brown;
+    float: left;
+    clear: both;
+}
+
+.container__right {
+    max-width:20%;
+    margin-right: 10px;
+    display: inline;
+    border: 2px solid brown;
+    background-color: rgb(212, 111, 212);
+    float: right;
+    clear: both;
+}
+
+.container__middle {
+    color:rgb(219, 132, 219);
+    text-align: center;
+    font-size: 14px;
+    font-family:sans-serif;
+    clear: both;
+}
+
+/* .container__alerts {
+    margin: auto;
+} */
+
+#send__container {
+    display: block;
+    margin:auto;
+    text-align: center;
+    max-width: 900px;
+    width: 100%;
+}
+
+#send__container__message {
+    width: 93%;
+    border-radius: 5px;
+    height:20px;
+}
+
+.btn {
+    height: 28px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: lightgray;
+}

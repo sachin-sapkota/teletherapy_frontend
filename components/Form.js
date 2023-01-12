@@ -18,7 +18,6 @@ export default function Form({ form }) {
 
     const submitForm = async (e) => {
         e.preventDefault()
-        console.log(process.env.BACKEND)
         let score = 0
         answers.forEach((ans, i) => {
             if (typeof ans !== "null") {
@@ -28,8 +27,8 @@ export default function Form({ form }) {
 
         try {
             // Depression Severity: 0-4 none, 5-9 mild, 10-14 moderate, 15-19 moderately severe, 20-27 severe.
-            const updatedScore = await axios.post(process.env.BACKEND + "/user/update-score", { score: score })
-            console.log(updatedScore)
+            const updatedScore = await axios.post(process.env.BACKEND + "/user/update-score", { score: score }, { withCredentials: true })
+
         } catch (e) {
             setErrorMessage(e.response?.data?.message)
         }

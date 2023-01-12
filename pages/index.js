@@ -1,4 +1,5 @@
 import Form from "../components/Form"
+import Mood from "../components/Mood"
 
 export default function Home() {
   const form = [
@@ -43,7 +44,6 @@ export default function Home() {
 
   return (
     <div>
-      <Form form={form} />
     </div>
   )
 }
