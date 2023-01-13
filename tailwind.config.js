@@ -9,9 +9,8 @@ module.exports = {
     extend: {
       colors: {
         backgroundColor: '#e6d2af',
-        'formBox': "#022621",
+        formBox: '#022621',
       },
-
 
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
