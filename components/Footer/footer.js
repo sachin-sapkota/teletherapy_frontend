@@ -25,7 +25,7 @@ function Footer() {
             <div className="   flex py-3  px-5 gap-10 ">
               <div className=" flex pb-5 w-[400px]">
                 <div className="flex flex-col text-white gap-1">
-                  <div className=" font-bold text-[30px]">Teletherapy</div>
+                  <div className=" font-bold text-[30px]">TeleCBT</div>
                   <p className="font-semibold text-white/60  pr-[80px]">
                     Welcome to our online teletherapy platform for cognitive
                     behavior change.
@@ -142,7 +142,7 @@ function Footer() {
               <p className="text-white/80 mx-1 font-sans">2023</p>
               <p className="text-white/80 ">
                 <span>by</span>
-                <span className="ml-1 text-sm">Teletherapy</span>
+                <span className="ml-1 text-sm">TeleCBT</span>
               </p>
             </div>
           </div>

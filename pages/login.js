@@ -92,7 +92,7 @@ function Login() {
                             <div className="hover:cursor-pointer flex flex-col md:flex-row items-center gap-4 md:gap-10">
                                 <div
                                     onClick={() => {
-                                        router.push("/");
+                                        router.push("/dashboard");
                                     }}
                                     className="flex items-center gap-3"
                                 >

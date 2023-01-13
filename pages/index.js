@@ -11,7 +11,6 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>Teletherapy</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <div className="bg-black mt-[60px] text-white flex flex-col ">

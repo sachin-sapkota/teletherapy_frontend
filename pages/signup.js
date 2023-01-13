@@ -37,7 +37,7 @@ function Login() {
         const data = await createUser(process.env.BACKEND + "/user/create/", user)
         if (typeof data !== typeof undefined) {
             if (data.success) {
-                router.push("/")
+                router.push("/login")
             } else {
                 setErrorMessage(data?.message)
             }
@@ -91,7 +91,7 @@ function Login() {
                         <div className="dark:bg-formBox dark:text-mainText/75 bg-formBox flex flex-col gap-3 dark:md:border-0 md:border-2 shadow-lg p-10">
                             <div className="hover:cursor-pointer flex flex-col md:flex-row items-center gap-4 md:gap-10">
                                 <div onClick={() => {
-                                    router.push('/')
+                                    router.push('/dashboard')
                                 }} className="flex items-center gap-3">
                                     <div><Avatar alt="" src={loggedUser.avatar} /></div>
                                     <div className="font-sans text-blue-600 dark:text-mainText/75 text-xl hover:underline">

@@ -58,7 +58,7 @@ const Header = () => {
           {/* Logo */}
           <Link href="/">
             <span className="font-bold text-[20px] text-black dark:text-white">
-              Teletherapy
+              TeleCBT
             </span>
             {/* <Image
               src={'/images/logo.png'}
